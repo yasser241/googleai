@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", "Tahoma", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Redefine emerald to blue palette according to the Professional Polish design theme */
+  --color-emerald-50: #f0f5ff;
+  --color-emerald-100: #e0ebff;
+  --color-emerald-150: #cfe0ff;
+  --color-emerald-200: #c2d9ff;
+  --color-emerald-250: #adcaff;
+  --color-emerald-300: #93b9ff;
+  --color-emerald-350: #7caaff;
+  --color-emerald-400: #5b92ff;
+  --color-emerald-500: #3b71f6;
+  --color-emerald-600: #2563eb;       /* Primary Polish Blue */
+  --color-emerald-650: #1d4ed8;       /* Primary Polish Blue Dark */
+  --color-emerald-700: #1d4ed8;       /* Primary Polish Blue Dark */
+  --color-emerald-800: #1e40af;
+  --color-emerald-900: #1e3a8a;
+  --color-emerald-950: #0f172a;
+}
+
+body {
+  font-family: "Vazirmatn", "Tahoma", ui-sans-serif, system-ui, sans-serif;
+  direction: rtl;
+  text-align: right;
+  background-color: #f1f5f9;          /* --bg: #f1f5f9 */
+  color: #1e293b;                     /* --text: #1e293b */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom transitions and scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Stories scrollbar hider */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Layout animations */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+}
+
+.story-ring-active {
+  animation: pulseGlow 2s infinite ease-in-out;
+}

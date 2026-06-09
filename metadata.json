@@ -1,0 +1,6 @@
+{
+  "name": "فروشگاه بزرگ آریا",
+  "description": "یک پلتفرم فروشگاهی مدرن، واکنش‌گرا و کاملاً ایمن به زبان فارسی همراه با پنل مدیریت پیشرفته و استوری‌ها",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
